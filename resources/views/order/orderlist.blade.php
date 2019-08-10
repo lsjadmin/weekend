@@ -26,7 +26,7 @@
             @endforeach
         </table>
         >>>>>订单号：<span class="a">{{$order_number}}</span></br>
-        >>>>点击支付:  <button class="button">请点击</button>
+        >>>>点击支付: <a href="http://weekend.lianshijiea.com/ali/ali?order={{$order_number}}">点击支付</a>
 </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

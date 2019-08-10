@@ -82,7 +82,7 @@ class AliController extends Controller
         }
         $url = rtrim($param_str,'&');
         $url = $this->gate_way . $url;
-        //        dd($url);
+   
         header("Location:".$url);          // 重定向到支付宝支付页面
     }
     public function rsaSign($params) {
