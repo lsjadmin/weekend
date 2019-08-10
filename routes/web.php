@@ -30,6 +30,6 @@ Route::get('/order/create','Order\OrderController@Order'); //添加订单
 Route::get('/order/list','Order\OrderController@orderList'); //添加展示
 
 //订单支付
-Route::get('/ali/ali','Ali\AliControler@pay'); //接受订单展示过来的信息
-Route::post('/ali/notify','Ali\AliControler@notify'); //微信支付异步
-Route::get('/ali/aliReturn','Ali\AliControler@aliReturn'); //微信支付同步
+Route::get('/ali/ali','Ali\AliController@pay'); //接受订单展示过来的信息
+Route::post('/ali/notify','Ali\AliController@notify'); //微信支付异步
+Route::get('/ali/aliReturn','Ali\AliController@aliReturn'); //微信支付同步
