@@ -38,10 +38,10 @@ class AliController extends Controller
     public function pay()
     {
         $order_number=$_GET['order'];
-//         dd($order_number);
+        // dd($order_number);
         //验证订单状态 是否已支付 是否是有效订单
         $order_info = OrderModel::where(['order_number'=>$order_number])->first()->toArray();
-        // echo '<pre>';print_r($order_info);echo '</pre>';echo '<hr>';
+
         //判断订单是否已被支付
         if($order_info['pay_time']>0){
             die("订单已支付，请勿重复支付");

@@ -87,7 +87,7 @@
             $.get(
                    "/cart/create?goods_id="+id+'&num='+numc,
                   function(res){
-                       // console.log(res);
+                       console.log(res);
                       if(res==1){
                           alert('添加购物车成功');
                       }

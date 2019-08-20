@@ -9,20 +9,17 @@
 </head>
 <br>
         <h2>订单展示</h2>
-        <table>
-              <tr>
-                  <td>ID</td>
-                  <td>商品名称</td>
-                  <td>商家</td>
-                  <td>总价</td>
-              </tr>
-            @foreach($order as $k=>$v)
-            <tr>
-                <td>{{$v->son_id}}</td>
-                <td>{{$v->goods_name}}</td>
-                <td>{{$v->shop_name}}</td>
-                <td>{{$v->price}}</td>
-            </tr>
+        <table>>
+
+            @foreach($arr as $k=>$v)
+
+              <p>商家名称：{{$k}}</p>
+
+                @foreach($v as $k1=>$v1)
+                    <p>商品名称：{{$v1->goods_name}}</p>
+                    <p>商品价格：{{$v1->goods_price}}</p>
+                @endforeach
+
             @endforeach
         </table>
         >>>>>订单号：<span class="a">{{$order_number}}</span></br>

@@ -4,10 +4,10 @@ namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class OrderSonModel extends Model
+class PGoodsModel extends Model
 {
     //
-    protected $table="we_order_son";
+    protected $table="p_goods";
     public $timestamps=false;
-    protected $primaryKey="son_id";
+    protected $primaryKey="goods_id";
 }

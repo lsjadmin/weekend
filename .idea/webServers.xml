@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a14e0f1c-8ecb-4b4b-b01b-b9fb3fe92575" name="阿里云" url="http://60.205.214.123">
+        <fileTransfer host="60.205.214.123" port="22" rootFolder="/wwwroot/weekend" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
